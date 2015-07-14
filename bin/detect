@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# valid for apps with a $STACKATO_SERVICES env variable defined
+if [ -z "$STACKATO_SERVICES" ]; then
+  exit 1  
+else
+  echo "STACKATO_SERVICES -> environment variables"
+  exit 0  
+fi
