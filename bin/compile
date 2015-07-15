@@ -13,6 +13,5 @@ cp .profile.d/serviceenv.sh $BUILD_DIR/.profile.d/serviceenv.sh
 mkdir -p $BUILD_DIR/lib
 cp lib/perl_env.pl $BUILD_DIR/lib/perl_env.pl
 
-
 echo "**HF**" `pwd`
 echo "**HLF** $STACKATO_SERVICES"
