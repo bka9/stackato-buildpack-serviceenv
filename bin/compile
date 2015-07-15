@@ -7,7 +7,10 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
+mkdir -p $BUILD_DIR/.profile.d
 cp .profile.d/serviceenv.sh $BUILD_DIR/.profile.d/serviceenv.sh
+
+mkdir -p $BUILD_DIR/lib
 cp lib/perl_env.pl $BUILD_DIR/lib/perl_env.pl
 
 
