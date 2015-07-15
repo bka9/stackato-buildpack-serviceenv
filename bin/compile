@@ -1,3 +1,15 @@
 #!/bin/sh
 
 echo "**HLF** $STACKATO_SERVICES"
+
+# parse args
+BUILD_DIR=$1
+CACHE_DIR=$2
+ENV_DIR=$3
+
+cp .profile.d/serviceenv.sh $BUILD_DIR/.profile.d/serviceenv.sh
+cp lib/perl_env.pl $BUILD_DIR/lib/perl_env.pl
+
+
+echo "**HF**" `pwd`
+echo "**HLF** $STACKATO_SERVICES"
