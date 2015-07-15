@@ -1,6 +1,5 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 use JSON; # imports encode_json, decode_json, to_json and from_json.
-use Data::Dumper;
 
 my $decoded = decode_json( "$ENV{'STACKATO_SERVICES'}" );
 foreach my $key ( keys %$decoded ) {
