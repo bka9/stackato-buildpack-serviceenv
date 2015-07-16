@@ -1,2 +1,2 @@
 #!/bin/sh
-eval $(lib/perl_env.pl)
+eval $(lib/node_env.js)
